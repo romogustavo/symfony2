@@ -1,0 +1,12 @@
+services:
+    sonata.admin.post:
+        class: Ap\LoginBundle\Admin\UsuarioAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Contenido:", label: "Usuarios" }
+        arguments:
+            - ~
+            - Ap\LoginBundle\Entity\Usuario
+            - ~
+        calls:
+            - [ setTranslationDomain, [AcmeDemoBundle]]
+

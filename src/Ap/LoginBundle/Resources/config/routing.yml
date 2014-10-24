@@ -1,0 +1,7 @@
+ap_login_usuario:
+    resource: "@ApLoginBundle/Resources/config/routing/usuario.yml"
+    prefix:   /usuario
+
+ap_login_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: ApLoginBundle:Default:index }

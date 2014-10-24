@@ -1,0 +1,4 @@
+services:
+#    ap_login.example:
+#        class: Ap\LoginBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

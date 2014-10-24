@@ -1,0 +1,26 @@
+Ap\LoginBundle\Entity\Usuario:
+    type: entity
+    table: null
+    repositoryClass: Ap\LoginBundle\Entity\UsuarioRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: '100'
+        apellido:
+            type: string
+            length: '100'
+        sexo:
+            type: integer
+        tipoDocumento:
+            type: integer
+            column: tipo_documento
+        numeroDocumento:
+            type: integer
+            column: numero_documento
+    lifecycleCallbacks: {  }
